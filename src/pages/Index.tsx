@@ -1,11 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { ThemeToggle } from "@/components/theme-toggle";
+import { NavMenu } from "@/components/nav-menu";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen flex flex-col items-center justify-center p-4">
+      <ThemeToggle />
+      <NavMenu />
+      <div className="animate-fade-in text-center">
+        <span className="text-sm uppercase tracking-widest">Hello, I am</span>
+        <h1 className="text-4xl md:text-6xl font-bold mt-2 mb-4">
+          Sehajdeep Singh Dhami
+        </h1>
+        <p className="text-muted-foreground max-w-lg mx-auto">
+          Welcome to my digital space. I create meaningful experiences through code and design.
+        </p>
       </div>
     </div>
   );
